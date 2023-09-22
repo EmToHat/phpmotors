@@ -1,0 +1,153 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Play:wght@400;700&family=Press+Start+2P&display=swap');
+/*
+font-family: 'Electrolize', sans-serif;
+font-family: 'Play', sans-serif;
+font-family: 'Press Start 2P', cursive;
+*/
+/*-------------------------*/
+
+
+/*Colors*/
+:root {
+    --light-grey:#bababa;
+    --medium-grey:#8d8d8d;
+    --dark-grey:#3a3a3a;
+    --light-blue:#a6cbeb;
+    --sky-blue:#4c96d7;
+    --white:#ffffff;
+}
+/*-------------------------*/
+
+
+/*All*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header_wrapper,
+#main_wrapper,
+#footer_wrapper {
+    background-color: var(--white);
+}
+
+img {
+    width: 100%;
+}
+/*-------------------------*/
+
+
+/*Body*/ 
+body {
+    background-image: url("../images/site/checkerboard.jpg");
+    max-width: 750px;
+    background-size: 300px 300px; 
+    margin: 0px auto 10px auto;
+}
+
+#body_wrapper {
+    border: 5px solid #4c96d7;
+    border-radius: 3px;
+}
+/*-------------------------*/
+
+
+/*Header*/ 
+#header_wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        "logo . login";
+    align-items: center;
+}
+
+#login {
+    grid-area: login;
+    text-align: center;
+}
+
+#login a {
+    color: var(--dark-grey);
+    text-decoration: none;
+}
+
+#login a:hover {
+    color: var(--sky-blue);
+}
+/*-------------------------*/
+
+
+/*Navigation*/ 
+#navigation_wrapper {
+    background-color: var(--dark-grey);
+    display: grid;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 20px 10px 20px 10px;
+}
+
+li a:active {
+    background-color: var(--sky-blue);
+}
+
+li a:hover {
+    background-color: var(--sky-blue);
+    color: var(--dark-grey);
+    padding: 20px 10px 20px 10px;
+    border-radius: 8%;
+}
+
+/*-------------------------*/
+
+
+/*Main*/ 
+#main_wrapper {
+    padding: 8px;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Play', sans-serif;
+}
+
+p, a {
+    font-family: 'Electrolize', sans-serif;
+}
+/*-------------------------*/
+
+
+/*Footer*/ 
+#footer_wrapper {
+    border-radius: 0 0 5px 5px;
+}
+
+hr,
+ul {
+    margin: 0;
+    padding: 0;  
+}
+
+hr {
+    background-color: var(--dark-grey);
+    height: 5px;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+    padding: 5px;
+}
+/*-------------------------*/
