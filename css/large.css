@@ -1,0 +1,45 @@
+/* Medium */
+@media (min-width: 768px) {
+    #header_wrapper {
+        border-radius: 5px 5px 0 0;
+        gap: 50px;
+    }
+
+    #logoDiv {
+        padding: 0 0 10px 5px;
+        grid-area: logo;
+    }
+
+    body {
+        background-image: url("../images/site/checkerboard.jpg");
+        max-width: 750px;
+        background-size: 300px 300px; 
+        margin: 0px auto 10px auto;
+    }
+    
+    #body_wrapper {
+        border: 5px solid #4c96d7;
+        border-radius: 10px;
+    }
+
+    #main_wrapper {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas: 
+            "welcome welcome"
+            "upgrades reviews"
+            "upgrades reviews";
+    }
+
+    #welcome {
+        grid-area: welcome;
+    }
+
+    #upgrades {
+        grid-area: upgrades;
+    }
+
+    #reviews {
+        grid-area: reviews;
+    }
+}
