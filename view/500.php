@@ -17,7 +17,7 @@
         <?php require $_SERVER['DOCUMENT_ROOT'].'/phpmotors/snippets/navigation.php'; ?>
         </nav>
 
-        <main id="main_wrapper">
+        <main class="main_wrapper">
             <div class="php500_wrapper">
                 <h1 class="server_error_h1">Server Error</h1>
                 <p class="server_error_p">We appologize, our server seems to be experiencing some technical difficulties.</p>

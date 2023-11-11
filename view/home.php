@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen" href="./css/small.css">
-    <link rel="stylesheet" media="screen" href="./css/large.css">
-    <title>PHP Motors Home</title>
+    <link rel="stylesheet" media="screen" href="/phpmotors/css/small.css">
+    <link rel="stylesheet" media="screen" href="/phpmotors/css/large.css">
+    <title>Home | PHP Motors</title>
 </head>
 <body>
     <div id="body_wrapper">
@@ -13,11 +13,15 @@
         <?php require $_SERVER['DOCUMENT_ROOT'].'/phpmotors/snippets/header.php'; ?>
         </header>
 
-        <nav id="navigation_wrapper">
-        <?php require $_SERVER['DOCUMENT_ROOT'].'/phpmotors/snippets/navigation.php'; ?>
+        <nav id="navigation_wrapper" class="menu">
+        <?php
+            //include '../index.php';
+            //require $_SERVER['DOCUMENT_ROOT'].'/phpmotors/snippets/navigation.php';
+            echo $navList;
+        ?>
         </nav>
 
-        <main id="main_wrapper">
+        <main id="home_wrapper" class="main_wrapper">
             <section id="welcome">
                 <h1>Welcome to PHP Motors!</h1>
                 <div class="description">

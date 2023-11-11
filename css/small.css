@@ -1,5 +1,5 @@
 /*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Play:wght@400;700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Play&display=swap');
 /*
 font-family: 'Electrolize', sans-serif;
 font-family: 'Play', sans-serif;
@@ -28,7 +28,6 @@ font-family: 'Press Start 2P', cursive;
 }
 
 #header_wrapper,
-#main_wrapper,
 #footer_wrapper {
     background-color: var(--white);
 }
@@ -40,16 +39,10 @@ img {
 
 /*Body*/ 
 body {
-    background-image: url("../images/site/checkerboard.jpg");
     max-width: 750px;
     background-size: 300px 300px; 
     margin: 0px auto 10px auto;
 }
-/*
-#body_wrapper {
-    border: 5px solid #4c96d7;
-    border-radius: 3px;
-}*/
 /*-------------------------*/
 
 /*Header*/ 
@@ -72,14 +65,18 @@ body {
     text-align: center;
 }
 
-#login a,
-.group a {
+.group a,
+#registration_link a {
     color: var(--dark-grey);
     text-decoration: none;
 }
 
+#login a {
+    color: #1659A2;
+}
+
 #login a:hover {
-    color: var(--sky-blue);
+    color: #0D345E;
 }
 /*-------------------------*/
 
@@ -87,19 +84,57 @@ body {
 /*Navigation*/ 
 #navigation_wrapper {
     background-color: var(--dark-grey);
-    display: flex;
-    justify-content: flex-start;
     width: 100%;
+}
+
+.menu {
     padding: 10px;
 }
 
-a {
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    padding-right: 10px;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    /*background-color: #555;*/
+    background-color: var(--sky-blue);
+    color: #fff;
+}
+
+/* Optional: Add more styling for active or current page */
+.menu a.active {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/*
+#navigation_list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+li a {
     text-decoration: none;
     color: var(--white);
     padding: 10px 5px 10px 5px;
 }
 
-/*
 li a:active {
     background-color: var(--sky-blue);
 }
@@ -109,21 +144,20 @@ li a:hover {
     color: var(--dark-grey);
     padding: 20px 10px 20px 10px;
     border-radius: 8%;
-}*/
+}
+*/
 
 /*-------------------------*/
 
 
+
 /*Main*/ 
-#main_wrapper {
-    padding: 10px;
-}
 
 h1, h2 {
     font-family: 'Play', sans-serif;
 }
 
-p, a {
+p, a, li, label, .link, span {
     font-family: 'Electrolize', sans-serif;
 }
 
@@ -138,11 +172,18 @@ p, a {
     flex-direction: column;
 }
 
-.btn {
+.description p {
+    color: #1D5281;
+}
+
+#button {
     width: 100px;
 }
 
 /*reviews*/
+.description2 {
+    padding: 20px;
+}
 
 /*upgrades*/
 #upgrades h1 {
@@ -178,3 +219,110 @@ p, a {
     width: 50%;
 }
 /*-------------------------*/
+
+
+
+/*Footer*/ 
+#footer_wrapper {
+    border-radius: 0 0 5px 5px;
+}
+
+hr,
+ul {
+    margin: 0;
+    padding: 0;  
+}
+
+hr {
+    background-color: var(--dark-grey);
+    height: 5px;
+    width: 100%;
+}
+
+#footer_wrapper p {
+    text-align: center;
+    padding: 5px;
+}
+/*-------------------------*/
+
+.link {
+    margin: 8px;
+}
+
+.link a {
+    color: #1659A2;
+}
+
+.link a:hover {
+    color: #0D345E;
+}
+
+/*
+.formHeader {
+    padding-bottom: 10px;
+}
+*/
+
+#error_message {
+    padding: 10px;
+}
+
+/*-------------------------*/
+
+.main_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--white);
+}
+
+.user-management {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#form-design {
+    margin: 15px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
